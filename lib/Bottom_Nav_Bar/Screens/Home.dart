@@ -5,6 +5,24 @@ class Home extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return SafeArea(
+      child: Scaffold(
+        body: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Column(
+
+            children: [
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Icon(Icons.menu_outlined),
+                  Icon(Icons.notifications_none_sharp),
+                ],
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
   }
 }
