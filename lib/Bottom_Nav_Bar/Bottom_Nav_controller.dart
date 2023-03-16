@@ -24,7 +24,7 @@ class _Bottom_Nav_controllerState extends State<Bottom_Nav_controller> {
       child: Scaffold(
         body: _page[currentindex],
         bottomNavigationBar: BottomNavigationBar(
-          iconSize: 30,
+          iconSize: 25,
           currentIndex: currentindex,
             selectedItemColor: Colors.black,
             unselectedItemColor: Colors.grey,
