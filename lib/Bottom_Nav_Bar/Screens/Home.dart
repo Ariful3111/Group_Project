@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:group_project/Bola%20Kaki.dart';
 import 'package:group_project/Controller/FontController.dart';
 import 'package:get/get.dart';
 import 'package:group_project/SeeAll.dart';
@@ -193,37 +194,42 @@ class Home extends StatelessWidget {
               ),
               Row(
                 children: [
-                  Container(
-                    height: Get.height * 0.08,
-                    width: Get.width * 0.430,
-                    decoration: BoxDecoration(
-                      color: Colors.white,
-                      boxShadow: [
-                        BoxShadow(
-                            offset: Offset(1.0, 1.0),
-                            blurStyle: BlurStyle.outer,
-                            color: Colors.grey.withOpacity(0.5),
-                            blurRadius: 5.0)
-                      ],
-                      borderRadius: BorderRadius.circular(10),
-                    ),
-                    child: Row(
-                      children: [
-                        Padding(
-                          padding: const EdgeInsets.only(left: 10),
-                          child: Icon(
-                            Icons.sports_volleyball_rounded,
-                            size: 35,
+                  InkWell(
+                    onTap: (){
+                      Get.to(BolaKaki());
+                    },
+                    child: Container(
+                      height: Get.height * 0.08,
+                      width: Get.width * 0.430,
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        boxShadow: [
+                          BoxShadow(
+                              offset: Offset(1.0, 1.0),
+                              blurStyle: BlurStyle.outer,
+                              color: Colors.grey.withOpacity(0.5),
+                              blurRadius: 5.0)
+                        ],
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                      child: Row(
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.only(left: 10),
+                            child: Icon(
+                              Icons.sports_volleyball_rounded,
+                              size: 35,
+                            ),
                           ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.only(left: 5),
-                          child: Text(
-                            'Bola Kaki',
-                            style: myFonts(16, FontWeight.w500),
+                          Padding(
+                            padding: const EdgeInsets.only(left: 5),
+                            child: Text(
+                              'Bola Kaki',
+                              style: myFonts(16, FontWeight.w500),
+                            ),
                           ),
-                        ),
-                      ],
+                        ],
+                      ),
                     ),
                   ),
                   Spacer(),
